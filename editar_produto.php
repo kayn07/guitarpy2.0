@@ -84,7 +84,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
             <div class="form-group">
                 <label>Preço: </label>
-                <input type="number" name="txt_preco" class="form-control" value="<?= htmlspecialchars($produto['preco']) ?>" required>
+                <input type="text" name="txt_preco" class="form-control" value="<?= htmlspecialchars($produto['preco']) ?>" required>
+            <!-- o codigo acima "type text" foi alterado, pq antes era number e agora é text -->
             </div>
             <div class="form-group">
                 <label>Categoria: </label>
